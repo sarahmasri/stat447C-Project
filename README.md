@@ -11,16 +11,16 @@ I am the only contributor to this project. Final copies of the project proposal 
 This project explores the theme of a ``careful and scientific comparison of a Bayesian estimator with another one, either Bayesian or non-Bayesian". This includes a motivation and background/review of literature of both elastic net regression and Bayesian regression using a spike-and-slab prior. If time permits, I would like to explore the possibility of proposing an extended technique from spike-and-slab regression. 
 
 ## Folders
-- **Data**: 
-- **Proposal**: 
+- **Data**: Data directory.
+- **Proposal**: All files related to project proposal.  
 
 ## Files
 - **README.md**: This file.
 - **Proposal/proposal.pdf**: This projects proposal including an abstract, proposal logistics, and proposed datasets. PDF file. 
 - **Proposal/proposal.tex**: This projects proposal including an abstract, proposal logistics, and proposed datasets. TEX file. 
 - **Proposal/references.bib**: References used in project proposal. BIB file. 
-- **GSE75688_GEO_processed_Breast_Cancer_raw_TPM_matrix.txt**: Single cell RNA-seq dataset for breast cancer study. 
-- **GSE72056_melanoma_single_cell_revised_v2.txt**: Single cell RNA-seq dataset for melanoma study.
+- **head_breast_cancer.txt**: Single cell RNA-seq dataset for breast cancer study. First 10 rows.  
+- **head_melanoma.txt**: Single cell RNA-seq dataset for melanoma study. First 10 rows. 
 
 ## Author
 Sarah Masri | [@sarahmasri](https://github.com/sarahmasri)
