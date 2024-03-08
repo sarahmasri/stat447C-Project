@@ -1,0 +1,57 @@
+\documentclass[12pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{hyperref}
+
+\usepackage[left=1.5cm, right=2cm]{geometry}
+\usepackage{titling}
+
+\setlength{\droptitle}{-9em}   % This is your set screw
+
+\font\myfont=cmr12 at 18pt
+
+\title{\myfont STAT 447C Project Proposal: Comparing Methods for Linear Regression on High-Dimensional Molecular Data}
+\author{Sarah Masri, 97415681}
+\date{March 8, 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Abstract}
+
+\noindent Large-scale epigenetic analyses are an increasingly useful tool for prognostic prediction of disease and associated gene activation \cite{Tang2017}. Problems involving high-dimensional gene expression data are often challenging by nature due the number of predictors being much larger than the number of observations. Regularized mechanisms with built-in variable selection are often employed to overcome this. The objective of this project is to compare performance and advantages of some regularized linear regression approaches to Bayesian hierarchical generalized linear models in high-dimensional inference. Namely, to compare elastic net regression to spike-and-slab regression in the context of prediction and gene detection for high-dimensional molecular data. 
+
+\section{Project}
+
+\noindent This project explores the theme of a ``careful and scientific comparison of a Bayesian estimator with another one, either Bayesian or non-Bayesian". This includes a motivation and background/review of literature of both elastic net regression and Bayesian regression using a spike-and-slab prior. If time permits, I would like to explore the possibility of proposing an extended technique from spike-and-slab regression.  
+
+\section{Proposed Data}
+\noindent Proposed datasets are extracted from the NCBI Gene Expression Omnibus [\url{https://www.ncbi.nlm.nih.gov}]. If the reader wishes to avoid download the data, they can each be previewed on this projects public git repository [\url{https://github.com/sarahmasri/stat447C-Project}]. 
+\\
+\\
+\noindent {\bf Breat cancer data:}  Single cell RNA sequencing of primary breast cancer in homo sapiens. Project investiage's gene expression from 515 single cell sequencing data from 11 breast cancer patients.
+\newline [\url{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75688}]
+\\
+\\
+\noindent{\bf Melanoma data:} 	Single cell RNA-seq analysis of melanoma in homo sapiens. The project investigate's the diversity of expression profiles in melanoma tumours.
+\newline  [\url{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE72056}]
+
+
+%https://portal.gdc.cancer.gov/projects/TCGA-PRAD
+%https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2401-1
+
+%http://www.batisengul.co.uk/post/spike-and-slab-bayesian-linear-regression-with-variable-selection/#:~:text=Spike%20and%20slab%20is%20a,from%20the%20regression%20towards%20zero.
+
+%- lasso is fast and convex
+%- horshoe is non-convex
+
+
+
+ \nocite{higham1998handbook}
+
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
