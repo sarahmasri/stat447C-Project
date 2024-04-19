@@ -11,6 +11,8 @@ I am the only contributor to this project. Final copies of the project proposal 
 This project explores the theme of a ``careful and scientific comparison of a Bayesian estimator with another one, either Bayesian or non-Bayesian". This includes a motivation and background/review of literature of both elastic net regression and Bayesian regression using a spike-and-slab prior. If time permits, I would like to explore the possibility of proposing an extended technique from spike-and-slab regression. 
 
 ## Folders
+- **Code**: All R and stan files used to implement the methods described in the report.
+- **Figures**: Figures returned from implemented methods. 
 - **Data**: Data directory.
 - **Proposal**: All files related to project proposal.  
 
