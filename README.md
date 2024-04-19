@@ -14,15 +14,18 @@ This project explores the theme of a ``careful and scientific comparison of a Ba
 - **Code**: All R and stan files used to implement the methods described in the report.
 - **Figures**: Figures returned from implemented methods. 
 - **Data**: Data directory.
-- **Proposal**: All files related to project proposal.  
+- **Proposal**: All files related to project proposal.
+- **Report**: All files related to project report.
 
 ## Files
 - **README.md**: This file.
-- **Proposal/proposal.pdf**: This projects proposal including an abstract, proposal logistics, and proposed datasets. PDF file. 
-- **Proposal/proposal.tex**: This projects proposal including an abstract, proposal logistics, and proposed datasets. TEX file. 
-- **Proposal/references.bib**: References used in project proposal. BIB file. 
-- **head_breast_cancer.txt**: Single cell RNA-seq dataset for breast cancer study. First 10 rows.  
-- **head_melanoma.txt**: Single cell RNA-seq dataset for melanoma study. First 10 rows. 
+- **Code/simulation.R**: R file that compares naïve elastic net with Bayesian regression with a horseshoe prior on simulated data.
+- **Code/EN.R**: R files that implements naïve elastic net on the breast cancer data. 
+- **Code/horseshoe.R**:  R files that implements Bayesian regression with a horseshoe prior on the breast cancer data. 
+- **Code/compare.R**: R file that compares elastic net with horseshoe prior results.
+- **Data/horseshoe.txt**: Gene coefficient results from Bayesian regression with a horseshoe prior on the breast cancer data.
+- **Proposal/proposal.pdf**: This projects proposal including an abstract, proposal logistics, and proposed datasets. PDF file.
+- **Report/report.pdf**: Completed project report. PDF file. 
 
 ## Author
 Sarah Masri | [@sarahmasri](https://github.com/sarahmasri)
