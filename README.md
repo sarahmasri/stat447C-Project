@@ -12,8 +12,8 @@ This project explores the theme of a ``careful and scientific comparison of a Ba
 
 ## Folders
 - **Code**: All R and stan files used to implement the methods described in the report.
-- **Figures**: Figures returned from implemented methods. 
 - **Data**: Data directory.
+- **Figures**: Figures returned from implemented methods. 
 - **Proposal**: All files related to project proposal.
 - **Report**: All files related to project report.
 
