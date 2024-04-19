@@ -85,42 +85,7 @@ elapsed_time <- end_time - start_time
 ##40.89618 secs
 
 
-
-
-
-
-
-
-
-
-
-
-
-##Accuracy of Classifier for Testing and Training Samples
-
-prediction <- data.frame(predict(EN, newx=data.matrix(x), 
-                                 interval ="prediction",
-                                 type="response", s=0.0001))
-
-colnames(prediction)<-c("B Cell","CD4","CD8","Mono","Neu",
-                        "NK","DC","M1","M2","MQ")
-
-which(as.matrix(prediction)==matrixStats::rowMaxs(as.matrix(prediction)) ,
-      arr.ind = TRUE)
-
-prediction_Test <- data.frame(predict(EN, newx=data.matrix(Test), 
-                                      interval ="prediction",
-                                      type="class", s=0.0001))
-
-sum(y_Test==as.matrix(prediction_Test))/length(y_Test) #accuracy
-
-
-
-
-
-
-
-
+plot(EN)
 
 
 
@@ -179,6 +144,8 @@ for (i in c(.1,.05,.01,.005,.001,.0005,.0001)) {
 }
 
 
+
+
 ##Plot ROC Curve
 
 
@@ -209,25 +176,8 @@ dev.off()
 
 
 
-
-
-
-
-
-###################################################
-###################################################
-################ BREAST CANCER ###################
-###################################################
-###################################################
-
 ####Breast Cancer-------------
 #Data was obtained from: (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75688)
-
-
-
-##Normalization of Breast Cancer Samples------
-
-
 
 
 ##Analysis over Breast Cancer Data------
@@ -333,6 +283,7 @@ for (i in min(which(y_Test %in% 12)):max(which(y_Test %in% 12))){
 }
 
 
+## Results
 TCell/length(which(y_Test%in%2)) #0.4814815
 BCell/length(which(y_Test%in%1)) #0.2891566
 M/length(which(y_Test%in%11))    #0
